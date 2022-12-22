@@ -1,3 +1,24 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "airbnb", "prettier", "prettier/react"],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["react", "prettier"],
+	"rules": {
+		"prettier/prettier": ["error"],
+		"react/jsx-filename-extension": [0]
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	}
 }
