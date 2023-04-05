@@ -18,6 +18,7 @@
 		"paths": {
 			"@components/*": ["components/*"],
 			"@utils/*": ["services/utils/*"],
+			"@storage/*": ["services/storage/*"],
 			"@context/*": ["services/context/*"]
 		}
 	},

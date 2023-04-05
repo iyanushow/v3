@@ -1,5 +1,5 @@
+import { clearState, saveState } from '@storage/index';
 import { createContext, ReactNode, useCallback, useContext, useState } from 'react';
-import { clearState, saveState } from 'services/storage';
 
 type IAppContext = {
 	show: boolean;
@@ -54,7 +54,7 @@ export const AppProvider = (props: { children: ReactNode }) => {
 /*
  * HOOK
  */
-export const useApp = () => {
+export const useAppContext = () => {
 	const context = useContext(AppContext);
 	if (!context) {
 		throw new Error("Missing AppProvider. You can't use the hook, without the provider.");
