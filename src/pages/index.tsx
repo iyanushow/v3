@@ -20,88 +20,76 @@ const Home: NextPageWithLayout = () => {
 	};
 
 	return (
-		<Layout>
-			<PageSection color={color}>
-				<PageWrapper>
-					<article>
-						<h1 data-text="I'm Iyanuoluwa Sowande" className="intro__text">
-							<mark className="mark">I&apos;m Iyanuoluwa Sowande</mark>
-						</h1>
-						<p>
-							{' '}
-							Frontend developer, UX architect and Javascript engineer,{' '}
-							<Link href="/lens">
-								<a aria-label="Go to Lens Page">
-									<button type="button" tabIndex={-1}>
-										Photochromic Lens
-									</button>
-								</a>
-							</Link>{' '}
-							enthusiast, practicing minimalist, and{' '}
-							<a
-								href="https://open.spotify.com/playlist/2EH5NURI9OzRsMOFOGL70V"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="View Music Playlist"
-							>
-								<button type="button" tabIndex={-1}>
-									Pop Music & Jazz lover
-								</button>
-							</a>{' '}
-							in search of flow.
-						</p>
-						<p>
-							Working with my hands to make magic happen on the internet. View my{' '}
-							<Link href="/projects">
-								<a aria-label="Go to Projects Page">
-									<button type="button" tabIndex={-1}>
-										Projects
-									</button>
-								</a>
-							</Link>
-							,{' '}
-							<Link href="/articles">
-								<a aria-label="Go to Articles Page And Check What I Read">
-									<button type="button" tabIndex={-1}>
-										Articles
-									</button>
-								</a>
-							</Link>
-							,{' '}
-							<Link href="/resume">
-								<a aria-label="Go to Resume Page">
-									<button type="button" tabIndex={-1}>
-										Resumé
-									</button>
-								</a>
-							</Link>
-							,{' '}
-							<Link href="/contact">
-								<a aria-label="Go to Contact Page">
-									<button type="button" tabIndex={-1}>
-										Contact Me
-									</button>
-								</a>
-							</Link>
-							, or send me an email at{' '}
-							<button
-								style={{ cursor: 'crosshair' }}
-								title="Copy to clipboard"
-								onClick={copyText}
-								type="button"
-								aria-label="Send an email"
-							>
-								hellocodewonders@gmail.com
+		<PageSection color={color}>
+			<PageWrapper>
+				<article>
+					<h1 data-text="I'm Iyanuoluwa Sowande" className="intro__text">
+						<mark className="mark">I&apos;m Iyanuoluwa Sowande</mark>
+					</h1>
+					<p>
+						{' '}
+						Frontend developer, UX architect and Javascript engineer,{' '}
+						<Link href="/lens" aria-label="Go to Lens Page">
+							<button type="button" tabIndex={-1}>
+								Photochromic Lens
 							</button>
-							.
-						</p>
-					</article>
-					<br />
-					<FooterLink goto="/about">See More About Me</FooterLink>
-					<br />
-				</PageWrapper>
-			</PageSection>
-		</Layout>
+						</Link>{' '}
+						enthusiast, practicing minimalist, and{' '}
+						<a
+							href="https://open.spotify.com/playlist/2EH5NURI9OzRsMOFOGL70V"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="View Music Playlist"
+						>
+							<button type="button" tabIndex={-1}>
+								Pop Music & Jazz lover
+							</button>
+						</a>{' '}
+						in search of flow.
+					</p>
+					<p>
+						Working with my hands to make magic happen on the internet. View my{' '}
+						<Link href="/projects" aria-label="Go to Projects Page">
+							<button type="button" tabIndex={-1}>
+								Projects
+							</button>
+						</Link>
+						,{' '}
+						<Link href="/articles" aria-label="Go to Articles Page And Check What I Read">
+							<button type="button" tabIndex={-1}>
+								Articles
+							</button>
+						</Link>
+						,{' '}
+						<Link href="/resume" aria-label="Go to Resume Page">
+							<button type="button" tabIndex={-1}>
+								Resumé
+							</button>
+						</Link>
+						,{' '}
+						<Link href="/contact" aria-label="Go to Contact Page">
+							<button type="button" tabIndex={-1}>
+								Contact Me
+							</button>
+						</Link>
+						, or send me an email at{' '}
+						<button
+							style={{ cursor: 'crosshair' }}
+							title="Copy to clipboard"
+							onClick={copyText}
+							type="button"
+							aria-label="Send an email"
+						>
+							hellocodewonders@gmail.com
+						</button>
+						.
+					</p>
+				</article>
+				<br />
+				<FooterLink goto="/about">See More About Me</FooterLink>
+				<br />
+			</PageWrapper>
+		</PageSection>
 	);
 };
 

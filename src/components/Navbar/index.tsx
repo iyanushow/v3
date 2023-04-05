@@ -1,7 +1,7 @@
 import Link from '@components/ActiveLink';
 import { Icon, Logo, Moon } from '@components/Icons';
 import { Header } from '@components/Layout/style';
-import { useAppContext } from '@context/appContext';
+import { Theme, useAppContext } from '@context/appContext';
 import React from 'react';
 
 const Navbar = () => {
@@ -93,9 +93,9 @@ const Navbar = () => {
 								</li>
 								<li className="nav-item pl-md-3">
 									<Link
-										href="#0"
+										href=""
 										className="nav-link nav-svg"
-										aria-label={`Turn On ${theme === false ? 'Light' : 'Dark'} Mood`}
+										aria-label={`Turn On ${theme === Theme.dark ? 'Light' : 'Dark'} Mood`}
 										onClick={setTheme}
 									>
 										<Moon />

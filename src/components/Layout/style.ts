@@ -1,3 +1,4 @@
+import { Theme } from '@context/appContext';
 import styled, { createGlobalStyle, css } from 'styled-components';
 
 const FontToken = css`
@@ -65,10 +66,10 @@ const DarkTheme = css`
 	}
 `;
 
-export const BodyStyling = createGlobalStyle<{ pageTheme: boolean }>`
+export const BodyStyling = createGlobalStyle<{ pageTheme: Theme }>`
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
-${(props) => (props.pageTheme ? DarkTheme : LightTheme)}
+${(props) => (props.pageTheme === Theme.dark ? DarkTheme : LightTheme)}
 
 ::selection {
   background: var(--token);

@@ -12,6 +12,7 @@ const Storage = {
 		}
 	},
 	set: function <T>(k: string, v: T) {
+		console.log('about to set', k, v);
 		localStorage.setItem(k, JSON.stringify(v));
 	},
 	remove: function (k: string) {

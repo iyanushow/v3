@@ -13,8 +13,10 @@ const Layout = ({ children, title = 'Home' }: { children: ReactNode; title?: str
 	const { theme, loadTheme, show, setTheme } = useAppContext();
 
 	useEffect(() => {
-		loadTheme();
+		loadTheme(theme);
 	}, [loadTheme]);
+
+	// console.log(theme);
 
 	return (
 		<Main>

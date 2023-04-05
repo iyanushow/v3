@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, { DocumentContext, Head, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
 	render() {
 		return (
-			<html lang="en">
+			<Html lang="en">
 				<Head>
 					<meta name="author" content="Iyanuoluwa Sowande" />
 					<meta
@@ -125,7 +125,7 @@ export default class MyDocument extends Document {
 					<Main />
 					<NextScript />
 				</body>
-			</html>
+			</Html>
 		);
 	}
 }
