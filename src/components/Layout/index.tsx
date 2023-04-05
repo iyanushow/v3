@@ -16,8 +16,6 @@ const Layout = ({ children, title = 'Home' }: { children: ReactNode; title?: str
 		loadTheme(theme);
 	}, [loadTheme]);
 
-	// console.log(theme);
-
 	return (
 		<Main>
 			<BodyStyling pageTheme={theme} />

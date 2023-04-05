@@ -28,36 +28,23 @@ const Home: NextPageWithLayout = () => {
 					</h1>
 					<p>
 						{' '}
-						Frontend developer, UX architect and Javascript engineer,{' '}
-						<Link href="/lens" aria-label="Go to Lens Page">
-							<button type="button" tabIndex={-1}>
-								Photochromic Lens
-							</button>
-						</Link>{' '}
-						enthusiast, practicing minimalist, and{' '}
 						<a
-							href="https://open.spotify.com/playlist/2EH5NURI9OzRsMOFOGL70V"
+							href="https://github.com/iyanushow/"
 							target="_blank"
 							rel="noopener noreferrer"
-							aria-label="View Music Playlist"
+							aria-label="View Github Profile"
 						>
 							<button type="button" tabIndex={-1}>
-								Pop Music & Jazz lover
+								Software developer
 							</button>
 						</a>{' '}
-						in search of flow.
+						and Javascript engineer, passionate about building elegant, efficient and scalable software applications.
 					</p>
 					<p>
-						Working with my hands to make magic happen on the internet. View my{' '}
+						Working with my hands to create magic on the world wide web. View my{' '}
 						<Link href="/projects" aria-label="Go to Projects Page">
 							<button type="button" tabIndex={-1}>
 								Projects
-							</button>
-						</Link>
-						,{' '}
-						<Link href="/articles" aria-label="Go to Articles Page And Check What I Read">
-							<button type="button" tabIndex={-1}>
-								Articles
 							</button>
 						</Link>
 						,{' '}
@@ -74,13 +61,13 @@ const Home: NextPageWithLayout = () => {
 						</Link>
 						, or send me an email at{' '}
 						<button
-							style={{ cursor: 'crosshair' }}
+							style={{ cursor: 'copy' }}
 							title="Copy to clipboard"
 							onClick={copyText}
 							type="button"
 							aria-label="Send an email"
 						>
-							hellocodewonders@gmail.com
+							iyanusowande@gmail.com
 						</button>
 						.
 					</p>

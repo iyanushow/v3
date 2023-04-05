@@ -2,6 +2,7 @@ import Link from '@components/ActiveLink';
 import { Icon, Logo, Moon } from '@components/Icons';
 import { Header } from '@components/Layout/style';
 import { Theme, useAppContext } from '@context/appContext';
+import Image from 'next/image';
 import React from 'react';
 
 const Navbar = () => {
